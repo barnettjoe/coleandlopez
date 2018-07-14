@@ -1,0 +1,5 @@
+.backLayer {
+	  composes: layer from "../ParallaxLayer/styles.module.css";
+    transform: translateZ(-1px);
+	  color: blue;
+}

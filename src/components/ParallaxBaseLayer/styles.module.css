@@ -1,0 +1,5 @@
+.baseLayer {
+	  composes: layer from "../ParallaxLayer/styles.module.css";
+    transform: translateZ(0);
+    color: red;
+}
