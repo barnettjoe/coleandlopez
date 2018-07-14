@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: barnettjoe/netlfy-cms-skeleton
 
 media_folder: static/assets
