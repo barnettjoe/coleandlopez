@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: barnettjoe/coleandlopez
+  repo: barnettjoe/coleandlopezspotify
 
 media_folder: static/assets
 public_folder: assets
