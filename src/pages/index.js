@@ -1,23 +1,18 @@
 import React from "react";
 import g from "glamorous";
-
 import { rhythm } from "../utils/typography";
+import Header from "../components/Header/Header";
 
 export default ({ data }) => {
-  console.log(data);
   return (
     <div>
-      <g.H1 display={"inline-block"} borderBottom={"1px solid"}>
-        Amazing Pandas Eating Things
-      </g.H1>
-      <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+      <Header title={data.site.siteMetadata.title}/>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <g.H3 marginBottom={rhythm(1 / 4)}>
             {node.frontmatter.title}{" "}
-            <g.Span color="#BBB">— {node.frontmatter.date}</g.Span>
           </g.H3>
-          <p>{node.excerpt}</p>
+          <div dangerouslySetInnerHTML={{ __html: node.html }} />
         </div>
       ))}
     </div>
@@ -26,18 +21,20 @@ export default ({ data }) => {
 
 export const query = graphql`
   query IndexQuery {
-    allMarkdownRemark {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "DD MMMM, YYYY")
-          }
-          excerpt
+  site {
+    siteMetadata {
+      title
+    }
+  }
+  allMarkdownRemark {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
         }
+        html
       }
     }
   }
-`;
+}`;
