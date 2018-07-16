@@ -14,3 +14,5 @@ collections:
       - { name: title, label: Title }
       - { name: bannerImage, label: Banner Image, widget: image }
       - { name: body, label: Body, widget: markdown }
+    editor:
+      preview: false
