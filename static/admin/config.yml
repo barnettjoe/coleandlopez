@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   repo: barnettjoe/coleandlopez
 
-media_folder: static/assets/images
+media_folder: static/assets
 public_folder: assets
 
 collections:
