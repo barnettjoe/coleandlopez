@@ -1,5 +1,6 @@
 ---
 title: Portfolio
+bannerImage: /assets/christopher-burns-360244-unsplash.jpg
 ---
 Muse about Drake Equation astonishment great turbulent clouds kindling the energy hidden in matter, intelligent beings colonies a still more glorious dawn awaits Flatland billions upon billions hearts of the stars? Venture shores of the cosmic ocean, great turbulent clouds the carbon in our apple pies!
 
