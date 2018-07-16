@@ -1,22 +1,23 @@
 import React from "react";
-import g from "glamorous";
-import { rhythm } from "../utils/typography";
 import Header from "../components/Header/Header";
+import Section from "../components/Section/Section";
+
 
 export default ({ data }) => {
-  return (
-    <div>
-      <Header title={data.site.siteMetadata.title}/>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>
-          <g.H3 marginBottom={rhythm(1 / 4)}>
-            {node.frontmatter.title}{" "}
-          </g.H3>
-          <div dangerouslySetInnerHTML={{ __html: node.html }} />
-        </div>
-      ))}
-    </div>
-  );
+	function getNode(title) {
+		var edge = data.allMarkdownRemark.edges.find(function(edge) {
+			return (edge.node.frontmatter.title === title)
+		});
+
+		return(edge.node);
+	}
+	return (
+		<div>
+		  <Header title={data.site.siteMetadata.title}/>
+		    <Section node={getNode("Section 1")} />
+		    <Section node={getNode("Section 2")} />
+		</div>
+	);
 };
 
 export const query = graphql`
