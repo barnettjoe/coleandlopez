@@ -14,8 +14,8 @@ export default ({ data }) => {
 	return (
 		<div>
 		  <Header title={data.site.siteMetadata.title}/>
-		    <Section node={getNode("Section 1")} />
-		    <Section node={getNode("Section 2")} />
+		    <Section node={getNode("About Us")} />
+		    <Section node={getNode("Contact")} />
 		</div>
 	);
 };
