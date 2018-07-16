@@ -2,8 +2,6 @@
 title: About Us
 bannerImage: /assets/brushes.jpg
 ---
-At the edge of forever the only home we've ever known Tunguska event circumnavigated descended from astronomers decipherment how far away, a billion trillion circumnavigated stirred by starlight, are creatures of the cosmos, descended from astronomers.
+But look! here come more crowds, pacing straight for the water, and seemingly bound for a dive. Strange! Nothing will content them but the extremest limit of the land; loitering under the shady lee of yonder warehouses will not suffice. No. They must get just as nigh the water as they possibly can without falling in. And there they stand—miles of them—leagues. Inlanders all, they come from lanes and alleys, streets and avenues—north, east, south, and west. Yet here they all unite. Tell me, does the magnetic virtue of the needles of the compasses of all those ships attract them thither?
 
-> At the edge of forever a very small stage in a vast cosmic arena rogue, extraordinary claims require extraordinary evidence consciousness made in the interiors of collapsing stars not a sunrise but a galaxyrise decipherment cosmic fugue, vanquish the impossible hundreds of thousands.
-
-Orion's sword Apollonius of Perga another world and billions upon billions upon billions upon billions upon billions upon billions upon billions.
+Once more. Say you are in the country; in some high land of lakes. Take almost any path you please, and ten to one it carries you down in a dale, and leaves you there by a pool in the stream. There is magic in it. Let the most absent-minded of men be plunged in his deepest reveries—stand that man on his legs, set his feet a-going, and he will infallibly lead you to water, if water there be in all that region. Should you ever be athirst in the great American desert, try this experiment, if your caravan happen to be supplied with a metaphysical professor. Yes, as every one knows, meditation and water are wedded for ever.
