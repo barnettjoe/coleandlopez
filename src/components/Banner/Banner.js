@@ -1,16 +1,13 @@
 import React from "react";
 import styles from "./styles.module.css"
+import Img from "gatsby-image";
 
-export default function({ title, img }) {
-	var divStyle = {
-		backgroundImage: 'url(' + img + ')',
-	};
+export default function({ sizes }) {
+	console.log(sizes);
 
 	return(
-		<div className={styles.banner} style={divStyle}>
-			<h3 className={styles.title}>
-				{ title }
-			</h3>
+		<div>
+			<Img sizes={ sizes } />
 		</div>
 	);
 }

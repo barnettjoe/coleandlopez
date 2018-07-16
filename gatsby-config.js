@@ -6,13 +6,23 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
-        path: `${__dirname}/sections/`,
+        name: `sections`,
+        path: `${__dirname}/sections`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/static/assets/images`,
       },
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-glamor`,
+	`gatsby-transformer-sharp`,
+	`gatsby-plugin-sharp`,
+	`gatsby-image`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
