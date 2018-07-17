@@ -6,7 +6,8 @@ export default function({ data }) {
 
 	console.log(data);
 	return (
-		<div>
+		<div className={styles.container}>
+			<scroll-page id={ data.frontmatter.title }></scroll-page>
 		    <Banner title={ data.frontmatter.title } sizes={ data.sizes } />
 			<div className={styles.section}>
 			  <div dangerouslySetInnerHTML={{ __html: data.html }} />
@@ -14,4 +15,3 @@ export default function({ data }) {
 		</div>
 	);
 }
-

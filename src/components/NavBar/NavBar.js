@@ -1,5 +1,6 @@
 import React from "react";
-import Link from "gatsby-link";
+import Scrollspy from 'react-scrollspy'
+import Scroll from '../Scroll'
 import styles from "./styles.module.css";
 
 export default function( {children} ) {
@@ -7,24 +8,29 @@ export default function( {children} ) {
 		<div className={styles.nav}>
 			<ul className={styles.ul}>
 				<li className={styles.li}>
-					<Link className={styles.link} to={`/`}>
-						Home
-					</Link>
+	                <Scroll type="id" element="About Us">
+						<a className={styles.link} href="#">
+							About Us
+						</a>
+	                </Scroll>
 				</li>
+
+
 				<li className={styles.li}>
-					<Link className={styles.link} to={`/about/`}>
-						About
-					</Link>
+	                <Scroll type="id" element="Portfolio">
+						<a className={styles.link} href="#">
+							Portfolio
+						</a>
+	                </Scroll>
 				</li>
+
+
 				<li className={styles.li}>
-					<Link className={styles.link} to={`/portfolio/`}>
-						Portfolio
-					</Link>
-				</li>
-				<li className={styles.li}>
-					<Link className={styles.link} to={`/contact/`}>
-						Contact
-					</Link>
+	                <Scroll type="id" element="Contact">
+						<a className={styles.link} href="#">
+							Contact
+						</a>
+	                </Scroll>
 				</li>
 			</ul>
 		</div>
