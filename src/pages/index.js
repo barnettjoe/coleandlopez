@@ -61,7 +61,7 @@ export const query = graphql`
       node {
         relativePath
         childImageSharp {
-		    sizes(maxWidth: 700) {
+		    sizes {
 		      ...GatsbyImageSharpSizes
 		    }
         }
