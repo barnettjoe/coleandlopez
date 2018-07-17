@@ -3,11 +3,8 @@ import styles from "./styles.module.css"
 import Banner from "../Banner/Banner"
 
 export default function({ data }) {
-
-	console.log(data);
 	return (
-		<div className={styles.container}>
-			<scroll-page id={ data.frontmatter.title }></scroll-page>
+		<div id={ data.frontmatter.title } className={styles.container}>
 		    <Banner title={ data.frontmatter.title } sizes={ data.sizes } />
 			<div className={styles.section}>
 			  <div dangerouslySetInnerHTML={{ __html: data.html }} />
