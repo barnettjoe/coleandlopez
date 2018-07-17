@@ -1,12 +1,20 @@
 import React from "react";
 import styles from "./styles.module.css"
-import rainge from "rainge";
 import twitter from "../../../static/assets/twitter.svg";
 import facebook from "../../../static/assets/facebook.svg";
 import instagram from "../../../static/assets/instagram.svg";
 
-
 export default function() {
+
+	function yearRange() {
+		var year = (new Date()).getFullYear();
+		if (year === 2018) {
+			return ""
+		} else {
+			return " - " + year;
+		}
+	}
+
 	return (
 		<div className={styles.footer}>
 			<div className={styles.content}>
@@ -16,7 +24,7 @@ export default function() {
 					<img className={styles.icon} src={facebook} alt="facebook" />
 					<img className={styles.icon} src={instagram} alt="instagram" />
 				</div>
-				<p className={styles.bottom}><span className={styles.copyright}>&copy;</span> Cole&amp;Lopez {rainge(2018)}</p>
+				<p className={styles.bottom}><span className={styles.copyright}>&copy; </span>Cole&amp;Lopez 2018{ yearRange() }</p>
 			</div>
 		</div>
 	);
