@@ -1,0 +1,28 @@
+.hamburger, .checkbox  {
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	top: 10px;
+	left: 10px;
+	z-index: 10;
+}
+
+.hamburger {
+	stroke-width: 2;
+	opacity: 0.5;
+}
+
+.checkbox {
+	opacity: 0;
+	z-index: -2;
+}
+
+.hamburger:hover {
+	cursor: pointer;
+}
+
+@media screen and (min-width: 550px) {
+	.hamburger {
+		display: none;
+	}
+}
