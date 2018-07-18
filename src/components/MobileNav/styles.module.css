@@ -1,28 +1,78 @@
-.hamburger, .checkbox  {
-	position: fixed;
-	width: 45px;
-	height: 45px;
-	top: 10px;
-	left: 10px;
+.hamburger, .close {
+	display: none;
 	z-index: 10;
 }
 
-.hamburger {
+.nav {
+	position: fixed;
+	background-color: #373737;
+	height: 100%;
+	padding: 20px;
+	left: -200px;
+	z-index: 10;
+	width: 200px;
+	transition: left 0.3s ease,
+}
+
+.nav ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	margin: 0;
+}
+
+.nav ul li {
+	margin: 15px 0;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+.hamburger, .close {
 	stroke-width: 2;
-	opacity: 0.5;
+	width: 45px;
+	height: 45px;
 }
 
-.checkbox {
-	opacity: 0;
-	z-index: -2;
-}
+@media screen and (max-width: 550px) {
+	.hamburger, .close {
+		position: fixed;
+		top: 10px;
+	}
 
-.hamburger:hover {
-	cursor: pointer;
-}
-
-@media screen and (min-width: 550px) {
 	.hamburger {
+		display: inline;
+		left: 10px;
+	}
+
+	.close {
+		top: 10px;
+		right: 10px;
+	}
+
+	.nav:target ~ a .close {
+		display: inline;
+	}
+
+	.nav:target {
+		left: 0;
+		transition: left 0.3s ease,
+	}
+
+	.nav:target ~ a .hamburger {
 		display: none;
+	}
+
+	.nav:target ~ .backdrop {
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #373737;
+		z-index: 5;
+		opacity: 0.6;
 	}
 }

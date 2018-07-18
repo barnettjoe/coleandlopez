@@ -33,11 +33,6 @@
 	text-decoration: underline;
 }
 
-.logo {
-	height: 60px;
-	margin-top: 5px;
-}
-
 @media screen and (max-width: 700px) {
 	.nav {
 		height: 50px;
@@ -55,12 +50,5 @@
 @media screen and (max-width: 550px) {
 	.nav {
 		display: none;
-	}
-	.li {
-		line-height: 50px;
-	}
-	.logo {
-		height: 40px;
-		margin-top: 5px;
 	}
 }
