@@ -4,7 +4,9 @@ import styles from "./styles.module.css";
 export default function( {children} ) {
 	return(
 		<div className={ styles.wrapper }>
-			<div className={ styles.topBar }></div>
+			<div className={ styles.topBar }>
+				<h1 className={ styles.title }>Cole &amp; Lopez</h1>
+			</div>
 			<nav id="side-menu" className= { styles.menu }>
 				<ul className={styles.ul}>
 					<li className={styles.li}>
