@@ -36,10 +36,9 @@ export default function( {children} ) {
 			<a href="#side-menu">
 				<svg className={styles.hamburger}>
 					<defs/>
-					<circle cx='21' cy='21' r='20'  fill='#ffffff' stroke='#000000'/>
-					<line x1='7' x2='35' y1='15' y2='15' stroke='#000000' />
-					<line x1='7' x2='35' y1='21' y2='21' stroke='#000000' />
-					<line x1='7' x2='35' y1='27' y2='27' stroke='#000000' />
+					<circle cx='5' cy='5' r='4' fill='#ffffff' stroke='#000000'/>
+					<circle cx='16' cy='5' r='4' fill='#ffffff' stroke='#000000' />
+					<circle cx='27' cy='5' r='4' fill='#ffffff' stroke='#000000' />
 				</svg>
 			</a>
 			<a href="#close">
