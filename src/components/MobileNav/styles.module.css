@@ -1,75 +1,138 @@
-.hamburger, .close {
-	display: none;
+.hamburger, .close, .topBar {
 	z-index: 10;
+	display: none;
 }
 
-.nav {
+.line {
+	display: block;
+  position: absolute;
+  height: 7px;
+  width: 50px;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transition: .3s ease-in-out;
+}
+
+.hamburger .line:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger .line:nth-child(2) {
+  top: 14px;
+}
+
+.hamburger .line:nth-child(3) {
+  top: 28px;
+}
+
+.hamburger, .close {
+	width: 60px;
+  height: 45px;
+  position: fixed;
+  cursor: pointer;
+}
+
+.menu:target ~ a .hamburger {
+  pointer-events: none;
+}
+
+.menu:target ~ a .close {
+  pointer-events: auto;
+}
+
+.menu:target ~ a .hamburger .line {
+  top: 14px;
+  width: 0%;
+  left: 50%;
+}
+
+.close .line {
+  top: 14px;
+}
+
+.menu:target ~ a .close .line:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.menu:target ~ a .close .line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.menu {
 	position: fixed;
+	top: 50px;
 	background-color: #373737;
 	height: 100%;
 	padding: 20px;
-	left: -200px;
+	left: -100%;
 	z-index: 10;
-	width: 200px;
+	width: 100%;
 	transition: left 0.3s ease,
 }
 
-.nav ul {
+.menu ul {
+	text-align: center;
 	display: flex;
 	flex-direction: column;
 	list-style: none;
 	margin: 0;
 }
 
-.nav ul li {
+.menu ul li {
 	margin: 15px 0;
 }
 
-.nav ul li a {
+.menu ul li a {
 	text-decoration: none;
 	color: white;
 }
 
-.hamburger, .close {
-	stroke-width: 2;
-	width: 45px;
-}
-
-.hamburger {
-	height: 30px;
-	width: 38px;
-}
-
 @media screen and (max-width: 550px) {
-	.hamburger, .close {
-		position: fixed;
-		top: 10px;
+	.hamburger, .close, .topBar {
+		display: block;
 	}
 
-	.hamburger {
-		display: inline;
-		left: 10px;
+	.hamburger, .close {
+		top: 5px;
+		left: 5px;
 	}
 
 	.close {
-		top: 10px;
-		right: 10px;
+		pointer-events: none;
 	}
 
-	.nav:target ~ a .close {
+
+	.hamburger {
+		pointer-events: auto;
+	}
+
+	.topBar {
+		width: 100%;
+		background-color: #DADAD9;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 9;
+		height: 50px;
+		display: block;
+	}
+
+	.hamburger:hover {
+	  cursor: pointer;
+	}
+
+	.menu:target ~ a .close {
 		display: inline;
 	}
 
-	.nav:target {
+	.menu:target {
 		left: 0;
-		transition: left 0.3s ease,
+		transition: left 0.3s ease-in-out,
 	}
 
-	.nav:target ~ a .hamburger {
-		display: none;
-	}
-
-	.nav:target ~ .backdrop {
+	.menu:target ~ .backdrop {
 		position: fixed;
 		left: 0;
 		top: 0;

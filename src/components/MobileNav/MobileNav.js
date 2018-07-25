@@ -4,7 +4,8 @@ import styles from "./styles.module.css";
 export default function( {children} ) {
 	return(
 		<div className={ styles.wrapper }>
-			<nav id="side-menu" className= { styles.nav }>
+			<div className={ styles.topBar }></div>
+			<nav id="side-menu" className= { styles.menu }>
 				<ul className={styles.ul}>
 					<li className={styles.li}>
 						<a className={ styles.link } href="#top">
@@ -34,20 +35,17 @@ export default function( {children} ) {
 				</ul>
 			</nav>
 			<a href="#side-menu">
-				<svg className={styles.hamburger}>
-					<defs/>
-					<circle cx='5' cy='5' r='4' fill='#ffffff' stroke='#000000'/>
-					<circle cx='16' cy='5' r='4' fill='#ffffff' stroke='#000000' />
-					<circle cx='27' cy='5' r='4' fill='#ffffff' stroke='#000000' />
-				</svg>
+				<div className={ styles.hamburger }>
+		          <span className={ styles.line }></span>
+		          <span className={ styles.line }></span>
+		          <span className={ styles.line }></span>
+		        </div>
 			</a>
 			<a href="#close">
-				<svg className={styles.close}>
-					<defs/>
-					<circle cx='21' cy='21' r='20' fill='#ffffff' stroke='#000000' />
-					<line x1='11' x2='32' y1='11' y2='32' stroke='#000000' />
-					<line x1='11' x2='32' y1='32' y2='11' stroke='#000000' />
-				</svg>
+				<div className={styles.close}>
+		          <span className={ styles.line }></span>
+		          <span className={ styles.line }></span>
+		        </div>
 			</a>
 			<a className={ styles.backdrop } href="#close">
 				<div></div>
