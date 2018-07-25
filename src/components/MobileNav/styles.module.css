@@ -1,4 +1,7 @@
+@value nav-height: 40px;
+
 .title {
+	line-height: 40px;
 	font-size: 28px;
 	text-align: left;
 	padding: 0 10px;
@@ -13,7 +16,7 @@
 	display: block;
   position: absolute;
   height: 3px;
-  width: 100%;
+  width: 25px;
   background: black;
   border-radius: 9px;
   opacity: 1;
@@ -21,21 +24,25 @@
   transition: 0.3s ease-in-out;
 }
 
+.line {
+	margin-top: -1.5px;
+}
+
 .hamburger .line:nth-child(1) {
-  top: 0px;
+  top: 0;
 }
 
 .hamburger .line:nth-child(2) {
-  top: 7px;
+  top: 10px;
 }
 
 .hamburger .line:nth-child(3) {
-  top: 14px;
+  top: 20px;
 }
 
 .hamburger, .close {
-	width: 20px;
-  height: 20px;
+	width: 25px;
+  height: 25px;
   position: fixed;
   cursor: pointer;
 }
@@ -49,13 +56,13 @@
 }
 
 .menu:target ~ a .hamburger .line {
-  top: 7px;
+  top: 10px;
   width: 0%;
   left: 50%;
 }
 
 .close .line {
-  top: 7px;
+  top: 10px;
 }
 
 .menu:target ~ a .close .line:nth-child(1) {
@@ -68,7 +75,7 @@
 
 .menu {
 	position: fixed;
-	top: 34px;
+	top: nav-height;
 	background-color: #373737;
 	height: 100%;
 	padding: 20px;
@@ -101,7 +108,7 @@
 	}
 
 	.hamburger, .close {
-		top: 7px;
+		top: 10px;
 		right: 7px;
 	}
 
@@ -121,7 +128,7 @@
 		left: 0;
 		top: 0;
 		z-index: 9;
-		height: 34px;
+		height: nav-height;
 		display: block;
 		opacity: 0.9;
 	}
