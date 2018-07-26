@@ -1,6 +1,6 @@
 import Typography from "typography";
-import kirkhamTheme from "typography-theme-kirkham";
+import moraga from "typography-theme-moraga";
 
-const typography = new Typography(kirkhamTheme);
+const typography = new Typography(moraga);
 
 export default typography;
