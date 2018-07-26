@@ -3,13 +3,14 @@ import Link from "gatsby-link";
 import NavBar from "../components/NavBar/NavBar";
 import MobileNav from "../components/MobileNav/MobileNav";
 import Footer from "../components/Footer/Footer";
+import styles from "./styles.module.css";
 
 export default ({ children }) =>
-  <div>
+  <div className={ styles.flexWrapper }>
     <NavBar />
     <MobileNav />
-    <div>
+    <div className={ styles.main }>
       { children() }
     </div>
-    <Footer />
+    <Footer className={ styles.footer } />
   </div>
