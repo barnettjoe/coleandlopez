@@ -18,3 +18,15 @@
 	font-size: 100px;
 	text-shadow: 2px 2px 10px #342A21;
 }
+
+@media screen and (max-width: 700px) {
+	.title {
+		font-size: 80px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.title {
+		font-size: 50px;
+	}
+}
